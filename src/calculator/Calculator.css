@@ -1,0 +1,148 @@
+.calculator {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 32vw;
+}
+
+.container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .head .theme {
+  width: 22%;
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .screen {
+  font-family: "Spartan", sans-serif;
+  width: 94%;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 5vh 1vw;
+  outline: none;
+}
+
+.container .numpad {
+  margin-top: 3vh;
+  border-radius: 10px;
+  width: 88%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vh 1.85vw;
+}
+
+.container .numpad .num .btn {
+  border: none;
+  outline: none;
+  width: 95%;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.6vh 0;
+  line-height: 1;
+  border-radius: 10px;
+}
+
+.container .numpad .num .del {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 2.4vh 0;
+}
+
+.container .numpad .reset {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.container .numpad .reset .btn {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 2.5vh 0;
+}
+
+.container .numpad .eq {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+}
+
+.container .numpad .eq .btn {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 2.5vh 0;
+}
+
+@media only screen and (max-width: 540px) {
+  .calculator {
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    width: 87vw;
+  }
+  .container .head {
+    font-size: 1.6rem;
+  }
+  .container .head .theme {
+    width: 41%;
+    font-size: 1rem;
+  }
+  .container .screen {
+    width: 98%;
+  }
+  .container .numpad {
+    margin-top: 6vh;
+    width: 89%;
+    gap: 15px;
+    padding: 3vh 5vw;
+  }
+  .container .numpad .num .btn {
+    width: 90%;
+    padding: 2.5vh 0;
+  }
+  .container .numpad .num .del {
+    padding: 3.5vh 0;
+  }
+  .container .numpad .reset .btn {
+    padding: 3.5vh 0;
+  }
+  .container .numpad .eq .btn {
+    padding: 3.6vh 0;
+  }
+}
+/*# sourceMappingURL=Calculator.css.map */

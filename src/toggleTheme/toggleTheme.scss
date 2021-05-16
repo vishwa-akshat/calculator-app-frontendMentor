@@ -1,0 +1,38 @@
+.toggle-container {
+  margin-top: -10px;
+  .theme-num {
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6px;
+    line-height: 0;
+  }
+}
+
+.toggle-theme {
+  margin-top: -2px;
+  // background-color: hsl(223, 31%, 20%);
+  border-radius: 20px;
+  padding: 1.5px 3px 1px;
+  .rd {
+    display: inline-flex;
+    input[type="radio"] {
+      display: none;
+    }
+
+    #toggle-radio {
+      width: 1.1em;
+      height: 1.1em;
+      // background-color: hsl(6, 63%, 50%);
+      border-radius: 50%;
+      box-sizing: border-box;
+      padding: 2px;
+      margin: 2px;
+      transform: scale(0);
+    }
+
+    input[type="radio"]:checked + #toggle-radio {
+      transform: scale(1);
+    }
+  }
+}
